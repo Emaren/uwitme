@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  background-color: #C5BFBC;
+}
+
+#student-index {
+  position: relative;
+  left: 65px;
+}

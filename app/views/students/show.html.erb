@@ -1,0 +1,16 @@
+<h1>Show</h1>
+  <div id="student">
+    <table>
+      <th>
+        <tr><td><%= @student.name %></td></tr>
+      </th>
+    </table>
+  </div>
+
+
+  <div class="links">
+
+    <%= link_to "Edit", edit_student_path(@student) %>
+    <%= link_to "Destroy", student_path(@student), method: :delete, data: { confirm: "Confirm Deletion?"} %>
+
+  </div>
