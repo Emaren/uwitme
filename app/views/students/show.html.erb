@@ -7,18 +7,12 @@
   <h1 ondblclick="makeEditable(this)">Show</h1>
 
     <div id="student">
-      <table>
-        <th>
-          <tr><td><%= @student.name %></td>
-            <td>
-            </td>
-          </tr>
-        </th>
-      </table>
-    </div>
+      <br>
+      <%= @student.name %><br><br>
 
 
-  <div class="links">
+
+  <div class="linksb">
 
     <%= link_to "Back", students_path %>
     <%= link_to "Edit", edit_student_path(@student) %>

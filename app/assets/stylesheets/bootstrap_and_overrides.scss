@@ -11,11 +11,14 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   color: #95bcf2;
- -webkit-text-fill-color: #6184ED; /* Will override color (regardless of order) */
- -webkit-text-stroke-width: 1px;
+
+  background: -webkit-linear-gradient(#95bcf2, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
  -webkit-text-stroke-color: black;
- padding: 17px;
- padding-left: 20px;
+ padding: 20px 0px 0px 18px;
+ display: inline-block;
 }
 
 p {
@@ -45,7 +48,9 @@ p {
 }
 
 body {
-  background-color: #C5BFBC;
+  // background-color: #C5BFBC;
+  background-image: url("gt.jpeg");
+
 }
 
 #student-index {
@@ -90,20 +95,23 @@ body {
 }
 
 .class-container {
+  border: black solid 2px;
   padding: 10px 10px 10px 10px;
-  background-color: grey;
+  background-image: url("http://orig12.deviantart.net/109e/f/2011/096/1/a/ios_linen_texture___black_by_vegardhw-d3ddll5.png");
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   position: absolute;
   margin: 0px 150px 50px 0px;
+  box-shadow: 10px 10px 5px;
 
 
 }
 
 .navbar-custom {
-  background-color: #C5BFBC;
+  background-image: url("gt.jpeg");
   padding-left: 50px;
+  margin-top: -5px;
 }
 
 textarea {
@@ -113,9 +121,20 @@ textarea {
 }
 
 .brand-bg {
+
+  display: inline-block;
   height: 60px;
   width: 150px;
-  background-color: grey;
+  background-image: url("gt.jpeg");
   border-radius: 5px;
+  border: black solid 2px;
+  z-index: 1;
+  box-shadow: 10px 10px 5px;
+  margin-top: -5px;
+}
+
+.linksb * {
+  color: black !important;
+  font-family: "Comic Sans MS";
 
 }
