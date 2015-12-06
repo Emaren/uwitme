@@ -12,13 +12,6 @@
  *
  *= require_tree .
  *= require_self
+ *= require font-awesome
+
  */
-
-body {
-  background-color: #C5BFBC;
-}
-
-#student-index {
-  position: relative;
-  left: 65px;
-}

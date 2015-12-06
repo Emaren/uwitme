@@ -1,7 +1,37 @@
-<h1>Index</h1>
 
-  <% @students.each do |student| %>
-  <div id="student-index">
-    <p><%= link_to student.name, student_path(student) %></p><br><br><br>
-  </div>
+<div class="class-container">
+
+
+  <div id="student-index" >
+
+    <div class="row">
+
+        <% @students.each do |student| %>
+
+      <div class="col-lg-4 col-md-4 col-sm-5 col-xs-7" id="student-component">
+
+          <i class="icon-refresh icon-spin"></i>
+          <p class="student-name"><%= link_to student.name, student_path(student) %></p>
+
+        <div class="btn-group btn-group-md" role="group">
+          <button type="button" class="btn btn-default1" name="button">Good</button>
+          <button type="button" class="btn btn-default2" name="button">Typing...</button>
+
+          <button type="button" class="btn btn-default3" name="button">Bad</button>
+        </div><br><br>
+
+            <progress value="70" max="100">Hello</progress><br><br>
+
+            <textarea name="name" rows="8" cols="40"></textarea><br><br>
+
+            <input type="radio" name="code-share" size="40"><br><hr><br>
+
+      </div>
+
     <% end %>
+
+    </div>
+
+  </div>
+
+</div>

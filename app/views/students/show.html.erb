@@ -1,15 +1,26 @@
-<h1>Show</h1>
-  <div id="student">
-    <table>
-      <th>
-        <tr><td><%= @student.name %></td></tr>
-      </th>
-    </table>
-  </div>
+  <script type="text/javascript">
+    function makeEditable(div){
+      div.contentEditable = true;
+    }
+  </script>
+
+  <h1 ondblclick="makeEditable(this)">Show</h1>
+
+    <div id="student">
+      <table>
+        <th>
+          <tr><td><%= @student.name %></td>
+            <td>
+            </td>
+          </tr>
+        </th>
+      </table>
+    </div>
 
 
   <div class="links">
 
+    <%= link_to "Back", students_path %>
     <%= link_to "Edit", edit_student_path(@student) %>
     <%= link_to "Destroy", student_path(@student), method: :delete, data: { confirm: "Confirm Deletion?"} %>
 
