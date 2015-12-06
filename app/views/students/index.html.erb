@@ -8,10 +8,11 @@
 
         <% @students.each do |student| %>
 
-      <div class="col-lg-4 col-md-4 col-sm-5 col-xs-7" id="student-component">
+      <div class="col-lg-4 col-md-4 col-sm-9 col-xs-11" id="student-component">
 
-          <i class="icon-refresh icon-spin"></i>
-          <p class="student-name"><%= link_to student.name, student_path(student) %></p>
+<p class="student-name"><%= link_to student.name, student_path(student) %></p>
+
+
 
         <div class="btn-group btn-group-md" role="group">
           <button type="button" class="btn btn-default1" name="button">Good</button>
@@ -22,7 +23,7 @@
 
             <progress value="70" max="100">Hello</progress><br><br>
 
-            <textarea name="name" rows="8" cols="40"></textarea><br><br>
+            <textarea name="name" rows="8" cols="40" ></textarea><br><br>
 
             <input type="radio" name="code-share" size="40"><br><hr><br>
 

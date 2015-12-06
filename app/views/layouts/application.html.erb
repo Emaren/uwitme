@@ -6,6 +6,9 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link
+    href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+    rel="stylesheet"  type='text/css'>
 
 </head>
 <body>
@@ -21,7 +24,11 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
+
+        <div class="brand-bg">
         <a class="navbar-brand" href="#">uwitme?</a>
+        </div>
+
       </div>
 
 
@@ -31,8 +38,10 @@
   <p class="alert"><%= alert %></p>
     </div>
   </nav>
+<div class="container">
 
 <%= yield %>
+</div>
 
 </body>
 </html>

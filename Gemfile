@@ -32,6 +32,8 @@ gem 'hirb'
 gem 'simple_form', '~> 3.2'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'font-awesome-rails'
+# gem 'websocket-rails'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 

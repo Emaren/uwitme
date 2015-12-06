@@ -5,16 +5,17 @@
 
 .navbar-brand {
   font-size: 35px;
-  color: #95bcf2;
   font-family: sans-serif;
   font-size: 35px;
   font-weight: bolder;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
-  color: black;
- -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  color: #95bcf2;
+ -webkit-text-fill-color: #6184ED; /* Will override color (regardless of order) */
  -webkit-text-stroke-width: 1px;
  -webkit-text-stroke-color: black;
+ padding: 17px;
+ padding-left: 20px;
 }
 
 p {
@@ -30,18 +31,25 @@ p {
 
 }
 
+.student-name a:visited {
+  font-family: sans-serif;
+  font-size: 25px;
+  font-weight: bolder;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+
+ -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+ -webkit-text-stroke-width: 1px;
+ -webkit-text-stroke-color: black;
+
+}
 
 body {
   background-color: #C5BFBC;
-  margin-left: -50px;
-
-
 }
 
 #student-index {
   display: table;
-  padding-left: 45px;
-
 }
 
 
@@ -84,9 +92,30 @@ body {
 .class-container {
   padding: 10px 10px 10px 10px;
   background-color: grey;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  position: absolute;
+  margin: 0px 150px 50px 0px;
+
+
 }
 
 .navbar-custom {
   background-color: #C5BFBC;
   padding-left: 50px;
+}
+
+textarea {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.brand-bg {
+  height: 60px;
+  width: 150px;
+  background-color: grey;
+  border-radius: 5px;
+
 }
